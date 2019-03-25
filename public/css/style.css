@@ -1,0 +1,48 @@
+body {
+  background-color: #ddd!important;
+}
+
+a:hover {
+  text-decoration: none!important;
+}
+
+.main-container {
+  width: 120rem;
+  margin: auto;
+}
+
+.landing-header-text {
+  margin-top: 25rem;
+  margin-left: 2em;
+  width: 50%!important;
+  background-color: rgba(255, 255, 255, .6);
+  padding: 3em;
+}
+
+.landing-header {
+  background: url("../images/babyboy.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  top:0;
+  left:0;
+  z-index: -1;
+}
+
+.jumbotron {
+  height: 80rem;
+}
+
+.navbar {
+  margin-bottom: 0!important;
+}
+
+@media (max-width: 576px) {
+  .main-container {
+    width: 100%;
+    margin: auto;
+  }
+
+  .landing-header-text {
+    margin-top: 12rem;
+  }
+ }
