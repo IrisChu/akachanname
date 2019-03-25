@@ -6,9 +6,11 @@ a:hover {
   text-decoration: none!important;
 }
 
-.main-container {
-  width: 120rem;
+.content-container {
+  width: 80%;
   margin: auto;
+  margin-bottom: 2em;
+  min-height: 40em;
 }
 
 .landing-header-text {
@@ -34,6 +36,46 @@ a:hover {
 
 .navbar {
   margin-bottom: 0!important;
+}
+
+.search-group {
+  max-width: 60em;
+  padding: 1em;
+  margin: auto;
+}
+
+.search-icon {
+  background-color: #eee;
+  border: 1px solid #ccc;
+  display: inline-block;
+  line-height: 3em;
+  height:10em;
+  width:10em;
+  border-radius:50%;
+  -moz-border-radius:50%;
+  -webkit-border-radius:50%;
+  text-align: center;
+  margin: 1em;
+}
+
+.search-icon:hover {
+  background-color: #bbb;
+  color: white;
+  border: 1px solid #aaa;
+  cursor: pointer;
+}
+
+.search-icon h4 {
+  padding-top: 1.3em;
+}
+
+.search-icon .glyphicon{
+  font-size:3em;
+}
+
+footer {
+  padding: 1em;
+  background-color: darkgrey;
 }
 
 @media (max-width: 576px) {

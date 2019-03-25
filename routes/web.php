@@ -12,8 +12,14 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('landing');
 });
-Route::get('/landing',function() {
-  return view('landing');
+Route::get('/girl',function() {
+  return view('search');
+});
+Route::get('/boy',function() {
+  return view('search');
+});
+Route::get('/abc',function() {
+  return view('list');
 });
