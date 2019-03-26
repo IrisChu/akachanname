@@ -12,14 +12,20 @@
 */
 
 Route::get('/', function () {
-    return view('landing');
+    return view('landing')->with('type', 'none');
 });
 Route::get('/girl',function() {
-  return view('search');
+  return view('search')->with('type', 'girl');
 });
 Route::get('/boy',function() {
-  return view('search');
+  return view('search')->with('type', 'boy');
 });
 Route::get('/abc',function() {
-  return view('list');
+  return view('list')->with('type', 'abc');
+});
+Route::get('/girl/{value?}',function() {
+  return view('result')->with('type', 'girl');
+});
+Route::get('/boy/{value?}',function() {
+  return view('result')->with('type', 'boy');
 });

@@ -2,6 +2,10 @@ body {
   background-color: #ddd!important;
 }
 
+a {
+  color: #000!important;
+}
+
 a:hover {
   text-decoration: none!important;
 }
@@ -13,6 +17,18 @@ a:hover {
   min-height: 40em;
 }
 
+/** nav **/
+.nav-item .active {
+  background-color: #eee;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.nav-item {
+  margin-left: 1em;
+}
+
+/** landing **/
 .landing-header-text {
   margin-top: 25rem;
   margin-left: 2em;
@@ -38,10 +54,28 @@ a:hover {
   margin-bottom: 0!important;
 }
 
+/** search **/
+.search-header {
+  position: relative;
+}
+
+.search-header-text {
+  z-index: 10;
+  position: absolute;
+  bottom: 3em;
+  background-color: rgba(255, 255, 255, .6);
+  padding: 1em;
+}
+
+.search-image{
+  width: 100%;
+}
+
 .search-group {
   max-width: 60em;
   padding: 1em;
   margin: auto;
+  text-align: center;
 }
 
 .search-icon {
