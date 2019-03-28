@@ -2,7 +2,7 @@ body {
   background-color: #ddd!important;
 }
 
-a {
+a:not(.btn) {
   color: #000!important;
 }
 
@@ -62,7 +62,7 @@ a:hover {
 .search-header-text {
   z-index: 10;
   position: absolute;
-  bottom: 3em;
+  bottom: 20%;
   background-color: rgba(255, 255, 255, .6);
   padding: 1em;
 }
@@ -105,6 +105,14 @@ a:hover {
 
 .search-icon .glyphicon{
   font-size:3em;
+}
+
+.search-girl {
+  color: #d16464!important;
+}
+
+.search-boy {
+  color: #2c59d9!important;
 }
 
 footer {
