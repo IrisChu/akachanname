@@ -23,9 +23,5 @@ Route::get('/boy',function() {
 Route::get('/abc',function() {
   return view('list')->with('type', 'abc');
 });
-Route::get('/girl/{value?}',function() {
-  return view('result')->with('type', 'girl');
-});
-Route::get('/boy/{value?}',function() {
-  return view('result')->with('type', 'boy');
-});
+
+Route::get('/result/{gender}/{property}', 'ResultController@show');

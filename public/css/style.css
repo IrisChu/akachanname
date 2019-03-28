@@ -115,6 +115,39 @@ a:hover {
   color: #2c59d9!important;
 }
 
+/** result **/
+.result-header-container{
+  position: relative;
+}
+
+.result-header {
+  z-index: 10;
+  position: absolute;
+  background-color: rgba(0, 0, 0, .8);
+  width: 40%;
+  height: 100%;
+}
+
+.result-header-girl {
+  right: 0;
+}
+
+.result-header-boy {
+  left:0;
+}
+
+.result-header-text {
+  color: #fff;
+  padding: 1em;
+}
+
+.result-image{
+  width: 100%;
+}
+
+
+/**/
+
 footer {
   padding: 1em;
   background-color: darkgrey;
