@@ -7,10 +7,16 @@ class ResultController extends BaseController
 {
   public function show($gender, $property)
   {
+    // todo create database
+    // get actual values depending on values 
     if($gender == 'girl') {
-      return view('result')->with('type', 'girl');
+      $names = array("Value" => "Kylie", "Amanda", "Katherine");
+
     } else {
-      return view('result')->with('type', 'boy');
+      $names = array("James", "Mark", "Matthew");
     }
+
+    return view('result')->with('type', $gender)->with('names', $names);
+
   }
 }

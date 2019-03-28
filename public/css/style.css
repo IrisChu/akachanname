@@ -116,33 +116,46 @@ a:hover {
 }
 
 /** result **/
-.result-header-container{
-  position: relative;
+.result-container {
 }
 
-.result-header {
+.result {
   z-index: 10;
   position: absolute;
+  top: 20%;
   background-color: rgba(0, 0, 0, .8);
-  width: 40%;
-  height: 100%;
+  width: 50%;
+  padding-bottom: 3em;
+  text-align: center;
 }
 
-.result-header-girl {
+.result-girl {
   right: 0;
 }
 
-.result-header-boy {
+.result-boy {
   left:0;
 }
 
-.result-header-text {
+.result-text, .result-text-bigger {
   color: #fff;
-  padding: 1em;
+  padding: .5em 1em 0 1em;
+  margin: 0;
+}
+
+.result-text-bigger {
+  font-size: 4em;
+  font-weight: bolder;
+}
+
+.result p {
+  font-size: 2em;
+  margin-left: 5px;
 }
 
 .result-image{
   width: 100%;
+  float: right;
 }
 
 
@@ -161,5 +174,14 @@ footer {
 
   .landing-header-text {
     margin-top: 12rem;
+  }
+
+  .result {
+    position: relative;
+    width: 100%;
+  }
+
+  .result-image {
+    float: none;
   }
  }
