@@ -2,7 +2,7 @@ body {
   background-color: #ddd!important;
 }
 
-a:not(.btn) {
+a:not(.btn):not(.search-boy):not(.search-girl) {
   color: #000!important;
 }
 
@@ -15,6 +15,7 @@ a:hover {
   margin: auto;
   margin-bottom: 2em;
   min-height: 40em;
+  display: table;
 }
 
 /** nav **/
@@ -29,25 +30,19 @@ a:hover {
 }
 
 /** landing **/
-.landing-header-text {
-  margin-top: 25rem;
-  margin-left: 2em;
-  width: 50%!important;
-  background-color: rgba(255, 255, 255, .6);
-  padding: 3em;
-}
-
 .landing-header {
-  background: url("../images/babyboy.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  top:0;
-  left:0;
-  z-index: -1;
+  position: relative;
 }
 
-.jumbotron {
-  height: 80rem;
+.landing-header-text {
+  z-index: 10;
+  position: absolute;
+  top: 30%;
+  left: 15%;
+  text-align: center;
+  width: 40%!important;
+  background-color: rgba(255, 255, 255, .6);
+  padding: 3em
 }
 
 .navbar {
@@ -80,7 +75,7 @@ a:hover {
 
 .search-icon {
   background-color: #eee;
-  border: 1px solid #ccc;
+  border: 1px solid;
   display: inline-block;
   line-height: 3em;
   height:10em;
@@ -117,6 +112,7 @@ a:hover {
 
 /** result **/
 .result-container {
+  position: relative;
 }
 
 .result {
@@ -173,7 +169,11 @@ footer {
   }
 
   .landing-header-text {
-    margin-top: 12rem;
+    width: 100%!important;
+    margin: auto;
+    top: 0;
+    left: 0;
+    position: relative;
   }
 
   .result {
