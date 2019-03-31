@@ -2,8 +2,8 @@
 @section('content')
 <div class="content-container">
   <div class="search-header">
-    <h1 class="search-header-text">何が大切ですか？</h1>
     <img class="search-image" src="{{ asset('images/search' .$type. '.png') }}" alt="no logo">
+    <h1 class="search-header-text">何が大切ですか？</h1>
   </div>
   <div class="search-group">
     <a href="result\{{$type}}\利口" class="search-icon @if($type == 'girl')search-girl @else search-boy @endif">

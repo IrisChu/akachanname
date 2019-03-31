@@ -176,6 +176,11 @@ footer {
     position: relative;
   }
 
+  .search-header-text {
+    position: relative;
+    margin-top: 0;
+  }
+
   .result {
     position: relative;
     width: 100%;
