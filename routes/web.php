@@ -25,3 +25,5 @@ Route::get('/abc',function() {
 });
 
 Route::get('/result/{gender}/{property}', 'ResultController@show');
+
+Route::get('/loadData', 'LoadDataController@load');

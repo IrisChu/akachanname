@@ -16,7 +16,7 @@ class Names extends Migration
       Schema::create('names', function (Blueprint $table) {
           $table->increments('id');
           $table->string('name');
-          $table->string('katakana');
+          $table->string('pronunciation')->nullable;
           $table->enum('gender', array('unisex','girl','boy'));
           $table->timestamps();
       });

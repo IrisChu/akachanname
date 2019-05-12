@@ -6,9 +6,8 @@
     <span class="result-text-bigger">Hello!</span>
     <p class="result-text">My name is... <p>
     <hr>
-    @foreach ($names as $name)
-    <h1 class="result-text-bigger">{{$name}}</h1>
-    @endforeach
+    <h1 class="result-text-bigger">{{$name->name}}</h1>
+    <p class="result-text">{{$name->pronunciation}}<p>
   </div>
 </div>
 @endsection
