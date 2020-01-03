@@ -1,52 +1,92 @@
 body {
-  background-color: #ddd!important;
+  background-color: #d9d4c9;
+  text-align: center;
+  margin: 0;
+  font-family: helvetica, sans-serif;
 }
 
-a:not(.btn):not(.search-boy):not(.search-girl) {
-  color: #000!important;
+a {
+  text-decoration: none;
 }
 
-a:hover {
-  text-decoration: none!important;
+.main-container {
+  width: 100%;
+  margin: 6em auto 0 auto;
 }
 
-.content-container {
-  width: 80%;
-  margin: auto;
-  margin-bottom: 2em;
-  min-height: 40em;
-  display: table;
+.background-image {
+  width: 60em;
+  max-width: 100%;
+}
+
+.button {
+  padding: .5em 1em;
+  margin: 0 5px;
+  border: 1px solid #a49575;
+  border-radius: 5px;
+  color: #fff;
+}
+
+.girl {
+  background-color: #d16464;
+}
+
+.boy {
+  background-color: #436adb;
 }
 
 /** nav **/
-.nav-item .active {
-  background-color: #eee;
-  border: 1px solid #ddd;
-  border-radius: 5px;
+.navbar {
+  background-color: #a49575;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+  margin: 0;
+}
+
+.navbar ul {
+  margin: 0;
 }
 
 .nav-item {
-  margin-left: 1em;
+  display: inline;
+  vertical-align: middle;
+  padding: 0 2em;
+}
+
+.nav-item a{
+  color: #fff;
+}
+
+.nav-item a:hover {
+  color: #ccc;
+}
+
+#nav-logo {
+  width: 6em;
+  padding: 0;
 }
 
 /** landing **/
-.landing-header {
+#landing-container {
   position: relative;
 }
 
 .landing-header-text {
   z-index: 10;
   position: absolute;
-  top: 30%;
-  left: 15%;
-  text-align: center;
-  width: 40%!important;
+  top: 15%;
+  right:50%;
+  width: 15em;
+  max-width: 100%;
   background-color: rgba(255, 255, 255, .6);
   padding: 3em
 }
 
-.navbar {
-  margin-bottom: 0!important;
+#landing-logo {
+  width: 10em;
+  opacity: .7;
 }
 
 /** search **/
@@ -58,12 +98,9 @@ a:hover {
   z-index: 10;
   position: absolute;
   bottom: 20%;
+  right: 50%;
   background-color: rgba(255, 255, 255, .6);
   padding: 1em;
-}
-
-.search-image{
-  width: 100%;
 }
 
 .search-group {
@@ -95,19 +132,20 @@ a:hover {
 }
 
 .search-icon h4 {
-  padding-top: 1.3em;
+  padding: 0;
+  margin-bottom: 5px;
 }
 
-.search-icon .glyphicon{
+.search-icon .material-icons{
   font-size:3em;
 }
 
 .search-girl {
-  color: #d16464!important;
+  color: #d16464;
 }
 
 .search-boy {
-  color: #2c59d9!important;
+  color: #436adb;
 }
 
 /** result **/
@@ -118,11 +156,10 @@ a:hover {
 .result {
   z-index: 10;
   position: absolute;
-  top: 20%;
+  top: 15%;
   background-color: rgba(0, 0, 0, .8);
   width: 50%;
-  padding-bottom: 3em;
-  text-align: center;
+  padding-top: 10px;
 }
 
 .result-girl {
@@ -151,23 +188,21 @@ a:hover {
 
 .result-image{
   width: 100%;
-  float: right;
 }
 
+
+/*footer*/
+.footer {
+  padding: 1em;
+  background-color: #a49575;
+}
+
+.footer a {
+  color: #fff;
+}
 
 /**/
-
-footer {
-  padding: 1em;
-  background-color: darkgrey;
-}
-
 @media (max-width: 576px) {
-  .main-container {
-    width: 100%;
-    margin: auto;
-  }
-
   .landing-header-text {
     width: 100%!important;
     margin: auto;
