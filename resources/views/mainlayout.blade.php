@@ -4,8 +4,8 @@
         @include('layout.head')
     </head>
     <body>
+      @include('layout.nav')
       <div class="main-container">
-        @include('layout.nav')
         @yield('content')
       </div>
     </body>
