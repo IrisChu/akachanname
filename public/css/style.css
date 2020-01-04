@@ -17,6 +17,7 @@ a {
 .background-image {
   width: 60em;
   max-width: 100%;
+  margin: auto;
 }
 
 .button {
@@ -71,6 +72,7 @@ a {
 /** landing **/
 #landing-container {
   position: relative;
+  display: flex;
 }
 
 .landing-header-text {
