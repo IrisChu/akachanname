@@ -1,3 +1,3 @@
 <div class="footer">
-    <a href="/">Made by Origin Design</a>
+    <a href="https://irischu.github.io/portfolio/">Made by Iris</a>
 </div>
