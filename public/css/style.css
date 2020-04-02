@@ -26,6 +26,7 @@ a {
   border: 1px solid #a49575;
   border-radius: 5px;
   color: #fff;
+  display: inline-block;
 }
 
 .girl {
@@ -51,7 +52,7 @@ a {
 }
 
 .nav-item {
-  display: inline;
+  display: inline-block;
   vertical-align: middle;
   padding: 0 2em;
 }
@@ -190,6 +191,7 @@ a {
 
 .result-image{
   width: 100%;
+  display: flex;
 }
 
 
@@ -205,22 +207,40 @@ a {
 
 /**/
 @media (max-width: 576px) {
+  #landing-container {
+   display: block!important;   
+  }
+  
+  .background-image {
+    display: flex;
+  }
+  
   .landing-header-text {
     width: 100%!important;
-    margin: auto;
+    margin: 0;
+    padding: 2em 0;
     top: 0;
     left: 0;
     position: relative;
   }
 
+  .nav-item {
+    padding: 0 1em;
+  }
+  
   .search-header-text {
     position: relative;
+    right: 0;
+    left: 0;
+    bottom: 0;
     margin-top: 0;
   }
 
   .result {
     position: relative;
     width: 100%;
+    padding: 10px 0;
+    opacity: 0.5;
   }
 
   .result-image {
